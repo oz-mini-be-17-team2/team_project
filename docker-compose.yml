@@ -1,0 +1,8 @@
+services:
+  db:                # 서비스 이름 (내 맘대로 정함)
+    image: postgres:16  # 어떤 프로그램(이미지)을 가져올지
+    environment:      # 접속 비밀번호 같은 환경 설정
+      POSTGRES_PASSWORD: password123
+    ports:            # 내 컴퓨터와 Docker를 연결하는 통로
+      - "5432:5432"
+
